@@ -140,12 +140,3 @@ const AboutPage: React.FC = () => {
 };
 
 export default AboutPage;
-
-type Feature = {
-  Icon: React.FC;
-  name: string;
-  description: string;
-  href: string;
-  cta: string;
-  className?: string;
-};

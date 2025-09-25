@@ -92,7 +92,7 @@ export function TeamMemberBio({ members }: { members: any[] }) {
               ))}
           </DialogDescription>
         </DialogHeader>
-        <div className="flex items-center space-x-2 max-h-96 overflow-auto">
+        <div className="inline-block max-h-96 overflow-auto">
           <PortableText value={member.bio} components={BioPortableTextComponent} />
         </div>
       </DialogContent>
