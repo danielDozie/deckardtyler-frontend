@@ -25,7 +25,7 @@ export default function Navigation({ menuItems, onClick }: { menuItems: any[], o
                   {mainMenuItems?.map((item: MenuItemsProps, idx: number) => (
                       <li key={idx} onClick={onClick}>
                           <Link href={'/' + (item?.internalPage?.slug?.current ??  item?.externalUrl)} className={`flex flex-col text-foreground hover:text-primary transition-colors relative ${isMobile ? 'text-2xl' : ''}`}>
-                              <sup className={`text-[10px] ${isMobile ? 'relative mr-2' : 'absolute -top-2 left-0'}`}>{idx+1}</sup>
+                              {/* <sup className={`text-[10px] ${isMobile ? 'relative mr-2' : 'absolute -top-2 left-0'}`}>{idx+1}</sup> */}
                               {item.text}
                           </Link>
                           {/* <span className='text-[12px]'>This is a sample description for menu if the menu is on mobile devices</span> */}

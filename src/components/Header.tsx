@@ -6,6 +6,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import Navigation from './Navigation'
 import TermsAndLegal from './sections/general/terms-and-legal'
 import Link from 'next/link'
+import PageProgressBar from "page-progressbar-react";
 
 export default function Header({menuItems}: {menuItems: any[]}) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -56,6 +57,7 @@ export default function Header({menuItems}: {menuItems: any[]}) {
             // exit={{ opacity: 0 }}
             // transition={{ duration: 0.3 }}
         >
+          <PageProgressBar color="#dc2626" height={3} />
           <div className={`w-full h-full md:mx-8 ${isScrolled ? 'border-b border-gray-300' : 'border-b border-foreground dark:border-foreground'}`}>
             <div className="w-full h-full px-4 md:px-8 flex justify-between items-center">
               <Link href='/'>

@@ -22,6 +22,7 @@
     "motion": "^12.0.5",
     "next": "15.0.2",
     "next-themes": "^0.3.0",
+    "page-progressbar-react": "^1.0.6",
     "react": "19.0.0-rc.1",
     "react-dom": "19.0.0-rc.1",
     "react-photo-album": "^3.0.2",
