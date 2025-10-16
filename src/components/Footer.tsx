@@ -2,9 +2,7 @@ import React from "react";
 import Container from "./sections/Container";
 import Divider from "./Divider";
 import Logo from "./Logo";
-import AppButton from "./ui/app-button";
 import { Text } from "./ui/text";
-import { Mail } from "lucide-react";
 import Navigation from "./Navigation";
 import Image from "next/image";
 import { FaMobile } from "react-icons/fa";
@@ -18,7 +16,6 @@ import Link from "next/link";
 import { RiInstagramFill, RiTwitterXFill } from "react-icons/ri";
 import { MdOutlineFacebook } from "react-icons/md";
 import { IoLogoLinkedin } from "react-icons/io5";
-import { FaEnvelopesBulk } from "react-icons/fa6";
 import { HiMiniCheckBadge } from "react-icons/hi2";
 import CustomPopover from "./ui/popover";
 import NewsletterSubscription from "./NewsletterSubscription";
@@ -33,7 +30,7 @@ export default function Footer({ menuItems }: { menuItems: any[] }) {
         }}
       />
       <div className="relative z-10">
-        <Divider title="Start a project" />
+        <Divider title="Start a project" linkTo="/contact" />
         <Container>
           <div className="flex flex-col md:flex-row w-full justify-between">
             <div className="w-full md:w-[20%] mt-8 md:mt-0">
