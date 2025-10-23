@@ -1,3 +1,5 @@
+export const SITE_NAME = 'Deckardtyler Limited';
+
 export interface iNavItems {
     name: string;
     id: number;
