@@ -6,7 +6,6 @@ import { client } from "@/lib/utils/sanity-client";
 import { ReactElement } from "react";
 import Image from 'next/image'
 import { PortableText } from '@portabletext/react';
-import { PortableTextBlock } from '@portabletext/types'
 import PortableTextComponent from '@/components/PortableTextComponent';
 import { SanityDocument } from "@sanity/client";
 

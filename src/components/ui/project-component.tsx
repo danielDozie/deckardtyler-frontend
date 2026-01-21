@@ -79,7 +79,6 @@ const ProjectComponent: React.FC<ProjectItem> = ({projectItems }) => {
         }, 2000);
     };
 
-    console.log({projectItems})
     const isMobile = useMediaQuery('(max-width: 768px)');
 
     const getWidth = (index:number) => isMobile ? 'w-full' : (sizes && sizes[index] === 'large' ? 'w-[70%]' : sizes && sizes[index] === 'normal' ? (isStats && isStats[index] ? 'w-[47.5%]' : 'w-[47.5%]') : 'w-[25%]');
