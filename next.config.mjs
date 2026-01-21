@@ -3,6 +3,7 @@ const nextConfig = {
     // experimental: {
     //     dynamicIO: true,
     // },
+    output: 'standalone',
     images: {
         remotePatterns: [
             {
